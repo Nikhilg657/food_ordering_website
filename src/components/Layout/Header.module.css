@@ -1,0 +1,27 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    height:auto;
+    padding: 1rem 5rem ;
+    background-color: rgb(134, 50, 19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+@media screen and (max-width:400px) {
+    .header{
+        padding:0 0 ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

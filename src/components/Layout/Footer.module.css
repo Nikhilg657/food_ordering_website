@@ -1,0 +1,15 @@
+.footer{
+    background-color:rgb(134,50,19);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+}

@@ -1,0 +1,36 @@
+.buttonn{
+    background-color: rgb(81, 22, 9);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    color: white;
+    padding: 0.5rem 2rem;
+    width: auto;
+    border: 0px solid orangered;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.buttonn div{
+    padding: 0 0.5rem ;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 2rem;
+    color: white;
+    height: 3rem;
+}
+.item_count{
+    background-color: rgb(213, 79, 30);
+    width: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+.buttonn:hover{
+    background-color: rgb(60, 21, 7);
+    transition: 0.3ms ease-out;
+    cursor: pointer;
+}
