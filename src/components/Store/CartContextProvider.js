@@ -44,6 +44,10 @@ const setCartItems=(state,action)=>{
             totalAmount:updatedAmount,
         }
     }
+    else if(action.type==='RESET')
+    {
+        return defaultCart;
+    }
     return defaultCart;
 }
 const CartContextProvider=(props)=>{
@@ -60,11 +64,17 @@ const CartContextProvider=(props)=>{
             id:id,
         })
     }
+    const resetCartHandler=()=>{
+        DispatchedItem({
+            type:'RESET',
+        })
+    }
     const cartContext={
         items:cartState.items,
         totalAmount:cartState.totalAmount,
         addItemToCart: addItemToCartHandler,
         removeItem:removeItemHandler,
+        resetCart:resetCartHandler,
     };  
     return (
         <CartContext.Provider value={cartContext}>

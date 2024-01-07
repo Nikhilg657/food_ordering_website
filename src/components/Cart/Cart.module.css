@@ -52,13 +52,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1rem 0;
     border-bottom: none ;
-  }
-  .modalcartdesc li span{
-    padding: 0 3rem;
-    margin: 0 1rem;
-    width: 2rem;
   }
   .mutator{
     display: flex;
@@ -91,8 +85,21 @@
     font-size: large;
     font-weight: 700;
     color: #8a2b06;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .order{
     color: #8a2b06;
     padding: 2.5rem 0;
+  }
+  .number::-webkit-outer-spin-button,
+  .number::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+  .details{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
   }
