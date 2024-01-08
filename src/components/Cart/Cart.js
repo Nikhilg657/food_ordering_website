@@ -87,7 +87,7 @@ const Cart = (props) => {
         <li key={item.id}>
           <span>{item.name}</span>
           <span>{item.price}</span>
-          <span>{item.amount}</span>
+          <span className={classes.amount}>{item.amount}</span>
           <div className={classes.mutator}>
             <button onClick={cartItemRemoveHandler.bind(null, item.id)}>
               −
